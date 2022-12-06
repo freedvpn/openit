@@ -197,23 +197,6 @@ proxies:
   tls: true
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 14 VMS"
-  server: news.microsoft.com
-  type: vmess
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-path: /share
-  servername: us.awsbest.com
-  ws-headers:
-    HOST: us.awsbest.com
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   server: main.millionaireaisle.com
   type: vmess
   country: "\U0001F1FA\U0001F1F8US"
@@ -226,6 +209,23 @@ proxies:
   servername: fr1.trump2023.org
   ws-headers:
     HOST: fr1.trump2023.org
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
+  server: news.microsoft.com
+  type: vmess
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  uuid: 4679f00e-90ce-430d-9714-6a19367ba112
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-path: /dongtaiwang.com
+  servername: v2ray1.zhujicn2.org
+  ws-headers:
+    HOST: v2ray1.zhujicn2.org
   http-opts: {}
   h2-opts: {}
   tls: true
@@ -1533,15 +1533,7 @@ proxies:
   password: 03f9d1c7-40f9-475c-bf46-e3883ee7da5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1ED\U0001F1F0 HK 154 TJN"
-  server: usa.liangyuandian.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: ceaea123-1b4b-469b-8358-bcd5f5529305
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 155 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 154 TJN"
   server: www.tokyo2023.ga
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -1549,7 +1541,7 @@ proxies:
   password: 4f7dc540-d244-4e64-af21-4b5bb300add3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 156 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 155 TJN"
   server: 170.187.182.212
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -1557,7 +1549,7 @@ proxies:
   password: a1e12464-9208-4583-bd21-ab6889fdd242
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 157 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 156 TJN"
   server: 5.44.249.43
   type: trojan
   country: "\U0001F3C1 ZZ"
@@ -1565,7 +1557,7 @@ proxies:
   password: cd39f62aed7b90f6
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FB\U0001F1F3 VN 158 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 157 TJN"
   server: 103.173.155.72
   type: trojan
   country: "\U0001F3C1 ZZ"
@@ -1573,28 +1565,35 @@ proxies:
   password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
   skip-cert-verify: true
   udp: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 158 SSR"
+  server: 116.162.120.23
+  port: 561
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mblank1port
+  obfs-param: dC5tZS92cG5oYXQ=
+  protocol-param: 27445:jgjgjgjgjgjg
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 159 SSR"
+  server: 116.162.120.30
+  port: 561
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mblank1port
+  obfs-param: dC5tZS92cG5oYXQ=
+  protocol-param: 27445:jgjgjgjgjgjg
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 159 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 160 VMS"
   ws-opts:
-    path: /A2DJOPFT
+    path: /5QNROSRV
     headers:
-      host: lg10.cfcdn1.xyz
-  server: 141.101.114.32
+      host: oplg1.zhujicn2.com
+  server: 203.30.188.189
   port: 443
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: "\U0001F1E6\U0001F1F2 AM 160 VMS"
-  ws-opts:
-    path: /IYKLD53M
-    headers:
-      host: opfr1.v2rayfree1.xyz
-  server: 185.162.228.229
-  port: 443
-  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
   alterId: 0
   cipher: auto
   network: ws
@@ -1615,52 +1614,6 @@ proxies:
 - type: vmess
   name: "\U0001F1FA\U0001F1F3 UN 162 VMS"
   ws-opts:
-    path: /9JZFDTKE
-    headers:
-      host: fr1.trump2023.org
-  server: 198.41.203.6
-  port: 443
-  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 163 SSR"
-  server: 116.162.120.23
-  port: 561
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mblank1port
-  obfs-param: dC5tZS92cG5oYXQ=
-  protocol-param: 27445:jgjgjgjgjgjg
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 164 SSR"
-  server: 116.162.120.30
-  port: 561
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mblank1port
-  obfs-param: dC5tZS92cG5oYXQ=
-  protocol-param: 27445:jgjgjgjgjgjg
-- type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 165 VMS"
-  ws-opts:
-    path: /5QNROSRV
-    headers:
-      host: oplg1.zhujicn2.com
-  server: 203.30.188.189
-  port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 166 VMS"
-  ws-opts:
     path: /sshkit/fdfadsfa/63848bfe228fd/
     headers:
       host: us-lb.sshkit.org
@@ -1671,7 +1624,20 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 167 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 163 VMS"
+  ws-opts:
+    path: /9JZFDTKE
+    headers:
+      host: fr1.trump2023.org
+  server: 198.41.203.6
+  port: 443
+  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 164 VMS"
   ws-opts:
     path: /
     headers:
@@ -1679,6 +1645,32 @@ proxies:
   server: 30.tehvp.xyz
   port: 2083
   uuid: 1ffeca67-a2bc-471b-b138-369d6762967d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 165 VMS"
+  ws-opts:
+    path: /A2DJOPFT
+    headers:
+      host: lg10.cfcdn1.xyz
+  server: 141.101.114.32
+  port: 443
+  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1E6\U0001F1F2 AM 166 VMS"
+  ws-opts:
+    path: /IYKLD53M
+    headers:
+      host: opfr1.v2rayfree1.xyz
+  server: 185.162.228.229
+  port: 443
+  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
   alterId: 0
   cipher: auto
   network: ws
@@ -1840,20 +1832,19 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 151 TJN"
   - "\U0001F1ED\U0001F1F0 HK 152 TJN"
   - "\U0001F1FA\U0001F1F8 US 153 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 154 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 155 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 156 TJN"
-  - "\U0001F1F8\U0001F1EC SG 157 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 158 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 159 VMS"
-  - "\U0001F1E6\U0001F1F2 AM 160 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 154 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 155 TJN"
+  - "\U0001F1F8\U0001F1EC SG 156 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 157 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 158 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 159 SSR"
+  - "\U0001F1E7\U0001F1FF BZ 160 VMS"
   - "\U0001F1E7\U0001F1FF BZ 161 VMS"
   - "\U0001F1FA\U0001F1F3 UN 162 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 163 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 164 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 165 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 166 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 167 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 163 VMS"
+  - "\U0001F1FA\U0001F1F8 US 164 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 165 VMS"
+  - "\U0001F1E6\U0001F1F2 AM 166 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -2013,19 +2004,18 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 151 TJN"
   - "\U0001F1ED\U0001F1F0 HK 152 TJN"
   - "\U0001F1FA\U0001F1F8 US 153 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 154 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 155 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 156 TJN"
-  - "\U0001F1F8\U0001F1EC SG 157 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 158 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 159 VMS"
-  - "\U0001F1E6\U0001F1F2 AM 160 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 154 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 155 TJN"
+  - "\U0001F1F8\U0001F1EC SG 156 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 157 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 158 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 159 SSR"
+  - "\U0001F1E7\U0001F1FF BZ 160 VMS"
   - "\U0001F1E7\U0001F1FF BZ 161 VMS"
   - "\U0001F1FA\U0001F1F3 UN 162 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 163 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 164 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 165 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 166 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 167 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 163 VMS"
+  - "\U0001F1FA\U0001F1F8 US 164 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 165 VMS"
+  - "\U0001F1E6\U0001F1F2 AM 166 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
