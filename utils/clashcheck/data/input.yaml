@@ -1,13 +1,25 @@
-proxies: []
+proxies:
+- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  type: vmess
+  server: 115.126.113.44
+  port: 443
+  cipher: auto
+  uuid: 0747b459-2b95-4af7-e7dc-379d9c8c947a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
