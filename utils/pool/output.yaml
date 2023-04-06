@@ -306,7 +306,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 34 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 34 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 443
@@ -347,15 +347,15 @@ proxies:
   ws-opts:
     path: /shirker
     headers:
-      host: uk1.scproxy.top
-- name: "\U0001F1FA\U0001F1F8 US 37 VMS"
+      host: hk-hytron.ilovescp.com
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
-  port: 443
+  port: 80
   cipher: auto
   uuid: 823c31da-701f-483d-b36e-896e5cf0987a
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -375,7 +375,21 @@ proxies:
   ws-opts:
     path: /shirker
     headers:
-      host: hk-hytron.ilovescp.com
+      host: lv3.sharecentrepro.org
+- name: "\U0001F1FA\U0001F1F8 US 39 VMS"
+  type: vmess
+  server: cf-lt.sharecentre.online
+  port: 443
+  cipher: auto
+  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: dp1.scproxy.top
 proxy-groups:
 - name: automatic
   type: url-test
@@ -413,11 +427,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   - "\U0001F1E8\U0001F1F3 CN 32 SSS"
   - "\U0001F1FA\U0001F1F3 UN 33 VMS"
-  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -457,10 +472,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   - "\U0001F1E8\U0001F1F3 CN 32 SSS"
   - "\U0001F1FA\U0001F1F3 UN 33 VMS"
-  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
