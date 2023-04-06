@@ -351,6 +351,20 @@ proxies:
 - name: "\U0001F1FA\U0001F1F8 US 37 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
+  port: 443
+  cipher: auto
+  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: hk-hytron.ilovescp.com
+- name: "\U0001F1FA\U0001F1F8 US 38 VMS"
+  type: vmess
+  server: cf-lt.sharecentre.online
   port: 80
   cipher: auto
   uuid: 823c31da-701f-483d-b36e-896e5cf0987a
@@ -362,20 +376,6 @@ proxies:
     path: /shirker
     headers:
       host: hk-hytron.ilovescp.com
-- name: "\U0001F1FA\U0001F1F8 US 38 VMS"
-  type: vmess
-  server: cf-lt.sharecentre.online
-  port: 443
-  cipher: auto
-  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /shirker
-    headers:
-      host: ca.ilovescp.com
 proxy-groups:
 - name: automatic
   type: url-test
