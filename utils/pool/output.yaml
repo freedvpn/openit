@@ -1,23 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
-  type: ss
-  server: 120.198.71.144
-  port: 31520
-  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  type: ss
-  server: 120.198.71.144
-  port: 14487
-  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  type: ss
-  server: 120.198.71.144
-  port: 36721
-  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: v23.jiedian.stream
   port: 80
@@ -27,6 +9,24 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  type: ss
+  server: 120.198.71.144
+  port: 31520
+  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  type: ss
+  server: 120.198.71.144
+  port: 14487
+  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  type: ss
+  server: 120.198.71.144
+  port: 36721
+  password: 4279bac8-ffaa-4e0a-884b-925d76b82e35
+  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1F5\U0001F1E6 PA 5 VMS"
   type: vmess
   server: 185.143.220.25
@@ -224,7 +224,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 24 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
   type: vmess
   server: quiz.vidio.com
   port: 443
@@ -336,7 +336,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ''
-- name: "\U0001F1FA\U0001F1F8 US 35 VMS"
+- name: "\U0001F1F8\U0001F1EC SG 35 VMS"
   type: vmess
   server: v18.jiedian.stream
   port: 80
@@ -448,10 +448,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1F5\U0001F1E6 PA 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E6\U0001F1FA AU 7 TJN"
@@ -471,7 +471,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F8 US 24 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1FA\U0001F1F8 US 26 VMS"
   - "\U0001F1E9\U0001F1EA DE 27 VMS"
@@ -482,7 +482,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
-  - "\U0001F1FA\U0001F1F8 US 35 VMS"
+  - "\U0001F1F8\U0001F1EC SG 35 VMS"
   - "\U0001F1E8\U0001F1E6 CA 36 VMS"
   - "\U0001F1F3\U0001F1F1 NL 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
@@ -498,10 +498,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1F5\U0001F1E6 PA 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E6\U0001F1FA AU 7 TJN"
@@ -521,7 +521,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F8 US 24 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1FA\U0001F1F8 US 26 VMS"
   - "\U0001F1E9\U0001F1EA DE 27 VMS"
@@ -532,7 +532,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
-  - "\U0001F1FA\U0001F1F8 US 35 VMS"
+  - "\U0001F1F8\U0001F1EC SG 35 VMS"
   - "\U0001F1E8\U0001F1E6 CA 36 VMS"
   - "\U0001F1F3\U0001F1F1 NL 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
