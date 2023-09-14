@@ -41,7 +41,7 @@ proxies:
     path: /path/1694516064215
     headers:
       host: www.37419052.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   type: vmess
   server: hdlb2.shabijichang.com
   port: 80
@@ -55,7 +55,21 @@ proxies:
     path: /
     headers:
       host: hdlb2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  type: vmess
+  server: mm4.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: f1865e50-2510-46d1-bcb2-e00b4b656305
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mm4.shabijichang.com
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: 137.175.86.129
   port: 443
@@ -69,20 +83,6 @@ proxies:
     path: /path/1694516064215
     headers:
       host: www.46074906.xyz
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
-  type: vmess
-  server: mm.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: f1865e50-2510-46d1-bcb2-e00b4b656305
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mm.shabijichang.com
 - name: "\U0001F1F8\U0001F1EC SG 7 TJN"
   type: trojan
   server: 5.44.249.52
@@ -411,20 +411,6 @@ proxies:
       host: cross-tropical-sandra-cole.trycloudflare.com
 - name: "\U0001F1FA\U0001F1F8 US 33 VMS"
   type: vmess
-  server: fhc.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: 8d59c92c-0653-4bf8-b832-37dc852b41de
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: fhc2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 34 VMS"
-  type: vmess
   server: 107.167.30.83
   port: 443
   cipher: auto
@@ -444,8 +430,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1F8\U0001F1EC SG 7 TJN"
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
@@ -474,7 +460,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
-  - "\U0001F1FA\U0001F1F8 US 34 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -484,8 +469,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1F8\U0001F1EC SG 7 TJN"
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
@@ -514,6 +499,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
-  - "\U0001F1FA\U0001F1F8 US 34 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
