@@ -365,20 +365,6 @@ proxies:
   port: 41035
   password: 3525588ee14ea924
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F3 UN 43 VMS"
-  type: vmess
-  server: flkf2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: flkf2.shabijichang.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -425,7 +411,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 40 VMS"
   - "\U0001F1E8\U0001F1F3 CN 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 43 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -474,6 +459,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 40 VMS"
   - "\U0001F1E8\U0001F1F3 CN 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 43 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
