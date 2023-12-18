@@ -1,5 +1,31 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+  type: trojan
+  server: 89.116.180.158
+  port: 443
+  udp: true
+  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
+  sni: 3us2.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us2
+    headers:
+      host: 3us2.pqjc.buzz
+- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
+  type: trojan
+  server: 89.116.180.179
+  port: 443
+  udp: true
+  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
+  sni: p6us4.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us4
+    headers:
+      host: p6us4.pqjc.buzz
+- name: "\U0001F1E8\U0001F1F3 CN 3 VMS"
   type: vmess
   server: us2.awslcn.info
   port: 25257
@@ -13,7 +39,18 @@ proxies:
     path: /
     headers:
       host: us2.awslcn.info
-- name: "\U0001F1E8\U0001F1E6 CA 2 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  type: trojan
+  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
+  port: 8443
+  udp: true
+  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
+  sni: ams-trojan-grpc.carfin.tech
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: '@apt_mahdi'
+- name: "\U0001F1E8\U0001F1E6 CA 5 VMS"
   type: vmess
   server: 193.203.203.88
   port: 8443
@@ -23,7 +60,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
   server: 162.159.192.244
   port: 443
@@ -37,7 +74,7 @@ proxies:
     path: /673ba378-840f-4928-81f2-203148d07350
     headers:
       host: cowochtmtrkers.turbo021.link
-- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
   type: vmess
   server: us3.36routes.online
   port: 80
@@ -51,7 +88,7 @@ proxies:
     path: /
     headers:
       host: us3.36routes.online
-- name: "\U0001F1ED\U0001F1F0 HK 5 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
   type: trojan
   server: us01.trojanyyds.xyz
   port: 443
@@ -60,7 +97,7 @@ proxies:
   sni: us01.trojanyyds.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 9 TJN"
   type: trojan
   server: other.kunlun-ppg.com
   port: 10848
@@ -69,43 +106,6 @@ proxies:
   sni: alibaba-node.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
-  type: trojan
-  server: 89.116.180.158
-  port: 443
-  udp: true
-  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
-  sni: 3us2.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us2
-    headers:
-      host: 3us2.pqjc.buzz
-- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
-  type: trojan
-  server: 89.116.180.179
-  port: 443
-  udp: true
-  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
-  sni: p6us4.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us4
-    headers:
-      host: p6us4.pqjc.buzz
-- name: "\U0001F1FA\U0001F1F3 UN 9 TJN"
-  type: trojan
-  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
-  port: 8443
-  udp: true
-  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
-  sni: ams-trojan-grpc.carfin.tech
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: '@apt_mahdi'
 - name: "\U0001F1E8\U0001F1F3 CN 10 VMS"
   type: vmess
   server: cm1.awslcn.info
@@ -189,15 +189,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 5 TJN"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 9 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 VMS"
@@ -213,15 +213,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 5 TJN"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 9 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 VMS"
