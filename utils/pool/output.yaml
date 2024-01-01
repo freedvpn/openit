@@ -309,6 +309,61 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: "\U0001F1EC\U0001F1EE GI 27 TJN"
+  type: trojan
+  server: gbs.pptv-tv.store
+  port: 17728
+  udp: true
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
+  type: vmess
+  server: 21.namesilo123.top
+  port: 8880
+  cipher: auto
+  uuid: 40e71b6a-00cf-437d-8232-4e83e6437286
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: uspp.sanfen002.top
+- name: "\U0001F1F7\U0001F1FA RU 29 TJN"
+  type: trojan
+  server: els_trojanone.yunjisuan.cf
+  port: 14866
+  udp: true
+  password: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  sni: els_trojanone.yunjisuan.cf
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+  type: vmess
+  server: 144.202.84.47
+  port: 57848
+  cipher: auto
+  uuid: e48643e7-0462-4055-f796-6ca6aa9f946d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 31 VMS"
+  type: vmess
+  server: www.visa.com
+  port: 2082
+  cipher: auto
+  uuid: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mgtow_cdn.yunjisuan.cf
 proxy-groups:
 - name: automatic
   type: url-test
@@ -339,6 +394,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1E8\U0001F1F3 CN 26 VMS"
+  - "\U0001F1EC\U0001F1EE GI 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1F7\U0001F1FA RU 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -371,5 +431,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1E8\U0001F1F3 CN 26 VMS"
+  - "\U0001F1EC\U0001F1EE GI 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1F7\U0001F1FA RU 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
