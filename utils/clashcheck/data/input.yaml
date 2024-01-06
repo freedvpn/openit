@@ -320,6 +320,39 @@ proxies:
     path: /
     headers:
       host: zUlA9.eSmAIlkORea.sHop
+- name: "\U0001F1E8\U0001F1F3 CN 26 SSS"
+  type: ss
+  server: 874b20d.f1.gladns.com
+  port: 2377
+  udp: true
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  cipher: chacha20-ietf-poly1305
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 874b20d.dl.nintendo.net.net:48331
+- name: "\U0001F1E8\U0001F1F3 CN 27 SSS"
+  type: ss
+  server: 874b20d.f2.gladns.com
+  port: 2377
+  udp: true
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  cipher: chacha20-ietf-poly1305
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 874b20d.dl.fastly.net.net:48331
+- name: "\U0001F1E8\U0001F1F3 CN 28 SSS"
+  type: ss
+  server: 874b20d.f3.gladns.com
+  port: 2377
+  udp: true
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  cipher: chacha20-ietf-poly1305
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 874b20d.dl.microsoft.lv.net:48331
 proxy-groups:
 - name: automatic
   type: url-test
@@ -349,6 +382,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 26 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 27 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 28 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -380,5 +416,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 26 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 27 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 28 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
