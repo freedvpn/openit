@@ -59,13 +59,27 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  type: vmess
+  server: server31.beheshtbaneh.com
+  port: 8880
+  cipher: auto
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server31.beheshtbaneh.com
+- name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
   type: vmess
   server: www.darkroom.lol
   port: 8080
@@ -79,20 +93,6 @@ proxies:
     path: /
     headers:
       host: www.darkroom.lol
-- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
-  type: vmess
-  server: 172.67.212.114
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.crispyrainbow.biz
 - name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
   type: vmess
   server: 104.22.51.162
@@ -215,6 +215,34 @@ proxies:
     path: /jsjc/nl1
     headers:
       host: jnl1.jsjc.sbs
+- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
+  type: vmess
+  server: www.crispyrainbow.online
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.crispyrainbow.online
+- name: "\U0001F1FA\U0001F1F8 US 19 VMS"
+  type: vmess
+  server: www.blueberrywindow.online
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
 proxy-groups:
 - name: automatic
   type: url-test
@@ -224,8 +252,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
@@ -236,6 +264,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
   - "\U0001F1E8\U0001F1E6 CA 16 TJN"
   - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -247,8 +277,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
@@ -259,5 +289,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
   - "\U0001F1E8\U0001F1E6 CA 16 TJN"
   - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
