@@ -468,21 +468,7 @@ proxies:
     path: /index
     headers:
       host: www.baidu.com
-- name: "\U0001F1FA\U0001F1F8 US 38 VMS"
-  type: vmess
-  server: in-jp-1.iivvppnn.info
-  port: 38301
-  cipher: auto
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  alterId: 1
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      host: www.ivpnpro.net
-- name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 38 VMS"
   type: vmess
   server: hk4.zingfast.vn
   port: 80
@@ -496,7 +482,7 @@ proxies:
     path: /kvw0870h/
     headers:
       host: zingfast.akamaized.net
-- name: "\U0001F1FA\U0001F1F3 UN 40 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
   type: vmess
   server: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
   port: 446
@@ -508,7 +494,7 @@ proxies:
   network: ws
   ws-opts:
     path: ''
-- name: "\U0001F1E6\U0001F1FA AU 41 VMS"
+- name: "\U0001F1E6\U0001F1FA AU 40 VMS"
   type: vmess
   server: jpaws006.xmrth-node.xyz
   port: 15863
@@ -522,6 +508,20 @@ proxies:
     path: /index
     headers:
       host: www.baidu.com
+- name: "\U0001F1FA\U0001F1F8 US 41 VMS"
+  type: vmess
+  server: ingress-i2.iivvppnn.info
+  port: 38106
+  cipher: auto
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  alterId: 1
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      host: www.ivpnpro.net
 - name: "\U0001F1E8\U0001F1F3 CN 42 VMS"
   type: vmess
   server: 120.233.7.221
@@ -553,7 +553,7 @@ proxies:
   sni: mlxy.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 46 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 46 TJN"
   type: trojan
   server: hnyd.52147.top
   port: 30120
@@ -608,20 +608,20 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 52 TJN"
   type: trojan
+  server: hnyd.52147.top
+  port: 30130
+  udp: true
+  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
+  sni: hnyd.52147.top
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 53 TJN"
+  type: trojan
   server: gzyd2.52147.top
   port: 30120
   udp: true
   password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
   sni: huayun.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 53 TJN"
-  type: trojan
-  server: gzyd1.52147.top
-  port: 30130
-  udp: true
-  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-  sni: gzyd1.52147.top
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 54 TJN"
@@ -746,22 +746,22 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
   - "\U0001F1E6\U0001F1FA AU 37 VMS"
-  - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
   - "\U0001F1FA\U0001F1F3 UN 39 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
-  - "\U0001F1E6\U0001F1FA AU 41 VMS"
+  - "\U0001F1E6\U0001F1FA AU 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 VMS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
   - "\U0001F1E8\U0001F1F3 CN 44 SSS"
   - "\U0001F1FA\U0001F1F8 US 45 TJN"
-  - "\U0001F1FA\U0001F1F8 US 46 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
   - "\U0001F1EF\U0001F1F5 JP 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1FA\U0001F1F8 US 50 TJN"
   - "\U0001F1FA\U0001F1F8 US 51 TJN"
   - "\U0001F1FA\U0001F1F3 UN 52 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 53 TJN"
+  - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
   - "\U0001F1FA\U0001F1F8 US 55 TJN"
   - "\U0001F1FB\U0001F1F3 VN 56 TJN"
@@ -814,22 +814,22 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
   - "\U0001F1E6\U0001F1FA AU 37 VMS"
-  - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
   - "\U0001F1FA\U0001F1F3 UN 39 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
-  - "\U0001F1E6\U0001F1FA AU 41 VMS"
+  - "\U0001F1E6\U0001F1FA AU 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 VMS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
   - "\U0001F1E8\U0001F1F3 CN 44 SSS"
   - "\U0001F1FA\U0001F1F8 US 45 TJN"
-  - "\U0001F1FA\U0001F1F8 US 46 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
   - "\U0001F1EF\U0001F1F5 JP 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1FA\U0001F1F8 US 50 TJN"
   - "\U0001F1FA\U0001F1F8 US 51 TJN"
   - "\U0001F1FA\U0001F1F3 UN 52 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 53 TJN"
+  - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
   - "\U0001F1FA\U0001F1F8 US 55 TJN"
   - "\U0001F1FB\U0001F1F3 VN 56 TJN"
