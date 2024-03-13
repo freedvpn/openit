@@ -79,6 +79,58 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       host: annie50.ceoiii.com
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: 172.67.73.163
+  port: 443
+  cipher: auto
+  uuid: 4040838c-f0a2-4380-81f9-9b255f44043a
+  tls: true
+  skip-cert-verify: true
+  servername: pofo-app.top
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: none
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  type: vmess
+  server: cloud.kinononva.top
+  port: 443
+  cipher: auto
+  uuid: 4040838c-f0a2-4380-81f9-9b255f44043a
+  tls: true
+  skip-cert-verify: true
+  servername: gini-app.top
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: none
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
+  type: vmess
+  server: 104.31.16.3
+  port: 443
+  cipher: auto
+  uuid: 4040838c-f0a2-4380-81f9-9b255f44043a
+  tls: true
+  skip-cert-verify: true
+  servername: jolimolilap.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: none
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  cipher: auto
+  uuid: 4040838c-f0a2-4380-81f9-9b255f44043a
+  tls: true
+  skip-cert-verify: true
+  servername: www.jolimolilap.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: none
 proxy-groups:
 - name: automatic
   type: url-test
@@ -89,6 +141,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1E6\U0001F1EA AE 5 VMS"
   - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -101,5 +157,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1E6\U0001F1EA AE 5 VMS"
   - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
