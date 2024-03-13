@@ -134,6 +134,19 @@ proxies:
 - name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
   type: vmess
   server: www.speedtest.net
+  port: 443
+  cipher: auto
+  uuid: 4040838c-f0a2-4380-81f9-9b255f44043a
+  tls: true
+  skip-cert-verify: true
+  servername: www.jolimolilap.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: none
+- name: "\U0001F1FA\U0001F1F3 UN 12 VMS"
+  type: vmess
+  server: www.speedtest.net
   port: 2053
   cipher: auto
   uuid: 4819cb1c-e6f6-4d47-905c-a036f860ddef
@@ -145,7 +158,7 @@ proxies:
   grpc-opts:
     grpc-service-name: /
     grpc-mode: multi
-- name: "\U0001F1FA\U0001F1F3 UN 12 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 13 VMS"
   type: vmess
   server: www.speedtest.net
   port: 2087
@@ -159,16 +172,16 @@ proxies:
   grpc-opts:
     grpc-service-name: string
     grpc-mode: gun
-- name: "\U0001F1FA\U0001F1F3 UN 13 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
   type: vmess
   server: www.speedtest.net
   port: 2053
   cipher: auto
-  uuid: d29daed6-4373-4f9b-f285-f453d9464656
+  uuid: c62bbf34-2761-472e-e2e0-afbf08b33af4
   alterId: 0
   tls: true
   skip-cert-verify: true
-  servername: 8z3.zahraravansh.org
+  servername: 9z2.zahraravansh.org
   network: grpc
   grpc-opts:
     grpc-service-name: /
@@ -190,6 +203,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 VMS"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -209,5 +223,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 VMS"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
